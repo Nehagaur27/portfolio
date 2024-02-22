@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(27, 25, 25);
+}
+
+header {
+    height: 100vh;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+/*------------------ navbar------------------ */
+/*------------------ portfolio------------------ */
+
+.logo {
+    display: flex;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: black;
+    background-color: white;
+}
+
+/*------------------ navbar------------------ */
+
+.navbar {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1rem;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    text-decoration: 2px solid plum underline;
+}
+
+/*---------------- profession-------------- */
+
+.profession {
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.profession p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.profession h1 {
+    font-size: 3rem;
+}
+
+span {
+    color: plum;
+}
+
+/* ------------- aboutme-------------- - */
+
+.picture img {
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+.about-me {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(149, 144, 144);
+    margin-bottom: 50px;
+}
+
+.myintro {
+    width: 50%;
+}
+
+.myintro h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.some-details {
+    display: flex;
+    position: absolute;
+    top: 840px;
+    left: 460px;
+}
+
+summary {
+    list-style-type: none;
+}
+
+summary:hover {
+    text-decoration: 2px solid plum underline;
+}
+
+details {
+    margin-right: 50px;
+}
+
+details.skill p {
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+details.skill span {
+    font-size: 1rem;
+}
+
+/* -------------- skills--------------  */
+
+.container {
+    display: flex;
+}
+
+.box-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: gray;
+    width: 150px;
+    height: 90px;
+    margin: 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.box-skills i {
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.languages {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages h1 {
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.box-skills:hover {
+    transform: translatey(-15px);
+    background-color: plum;
+    transition: 0.5s ease-out;
+}
+
+/* -------------- Portfolio--------------  */
+
+.myportfoliyo h1 {
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+iframe {
+    width: 160px;
+    height: 100px;
+    margin: 20px;
+}
+
+iframe:hover {
+    transform: translatey(-15px);
+    transition: 0.5s ease-out;
+}
+
+/* -------------- contact--------------  */
+
+.contact-us h1 {
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.input-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 450px;
+    height: 200px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: plum;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    transform: translatey(-15px);
+    transition: 0.5s ease-out;
+}
+
+/* ------------ media quries ------------------ */
+
+@media only screen and (max-width:800px) {
+    header {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .navbar {
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar ul li a {
+        margin: 10px;
+    }
+
+    .profession {
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .profession p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .profession h1 {
+        font-size: 2rem;
+    }
+
+    .picture img {
+        height: 300px;
+        width: 200px;
+        border-radius: 25px;
+        margin: 30px 0px;
+        padding: 10px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .myintro {
+        padding: 10px;
+    }
+
+    .myintro h1 {
+        font-size: 2rem;
+    }
+
+    .some-details {
+        display: flex;
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .languages h1 {
+        font-size: 2rem;
+    }
+
+    .myportfoliyo h1 {
+        font-size: 2rem;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe {
+        width: 50%;
+        margin: 10px;
+        height: 150px;
+    }
+
+    .contact-us h1{
+        font-size: 2rem;
+    }
+
+    input {
+        width: 350px;
+        height: 40px;
+    }
+
+textarea{
+    width: 350px;
+}
+}
